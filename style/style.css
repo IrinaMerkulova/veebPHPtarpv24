@@ -4,10 +4,16 @@ header {
     padding: 10px;
 }
 footer {
-    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 8px;
     text-align: center;
-    background: #ddd;
+    z-index: 1000;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -34,4 +40,24 @@ li a.active {
 li a:hover:not(.active) {
     background-color: #555555;
     color: white;
+}
+div.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-left:10%;
+}
+div.flex-container > div {
+    margin: 10px;
+    flex: 1; /*veergu laius*/
+    border: solid 1pt grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+@media screen and (max-width:600px) {
+    div.flex-container  {
+        flex-direction: column;
+    }
+}
+img{
+    width:200px;
 }
