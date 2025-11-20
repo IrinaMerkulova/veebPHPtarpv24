@@ -53,6 +53,7 @@ div.flex-container > div {
     border-radius: 10px;
     padding: 10px;
 }
+
 @media screen and (max-width:600px) {
     div.flex-container  {
         flex-direction: column;

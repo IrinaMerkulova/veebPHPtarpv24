@@ -28,6 +28,12 @@ include('nav.php');
     </div>
     <div>
         <img src="image/pilt.webp" alt="pilt vabal valikul">
+        <div>
+
+            <input type="button" value="TÄNA ON" onclick="showDate()">
+            <input type="button" value="Minu sünnipäevani" onclick="daysToBirthday()">
+        </div>
+        <div id="result"></div>
     </div>
 </div>
 
